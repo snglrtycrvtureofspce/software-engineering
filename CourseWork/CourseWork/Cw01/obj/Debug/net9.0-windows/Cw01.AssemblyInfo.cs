@@ -10,13 +10,15 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Lab02")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Cw01")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3036caf312e889389cebd49b3ebc30d5f7a93150")]
-[assembly: System.Reflection.AssemblyProductAttribute("Lab02")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Lab02")]
+[assembly: System.Reflection.AssemblyProductAttribute("Cw01")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Cw01")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
+[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
 
 // Создано классом WriteCodeFragment MSBuild.
 
