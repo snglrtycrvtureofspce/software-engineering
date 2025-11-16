@@ -1,13 +1,10 @@
 ﻿namespace Lab04.Classes;
 
-/// <summary>
-/// P11: Наследник от P1.
-/// </summary>
 internal class Guitar : StringInstrument
 {
     private readonly bool _isElectric;
 
-    public Guitar(string n, int sc, bool e) : base(n, sc)
+    public Guitar(string n, int stringsCount, bool e) : base(n, stringsCount)
     {
         _isElectric = e;
         Console.WriteLine($"Constructor Guitar: {Name}, electric: {_isElectric}");

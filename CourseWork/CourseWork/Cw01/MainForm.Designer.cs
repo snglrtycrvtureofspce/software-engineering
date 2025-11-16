@@ -1,4 +1,4 @@
-﻿namespace ApartmentExchange
+﻿namespace Cw01
 {
     partial class MainForm
     {

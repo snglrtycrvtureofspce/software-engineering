@@ -1,8 +1,5 @@
 ﻿namespace Lab04.Classes;
 
-/// <summary>
-/// P2: Наследник от базового.
-/// </summary>
 internal class WindInstrument : Instrument
 {
     private readonly string _material;

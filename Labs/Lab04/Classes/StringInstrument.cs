@@ -1,15 +1,12 @@
 ﻿namespace Lab04.Classes;
 
-/// <summary>
-/// P1: Наследник от базового.
-/// </summary>
 internal class StringInstrument : Instrument
 {
     protected readonly int StringsCount;
 
-    public StringInstrument(string n, int sc) : base(n)
+    public StringInstrument(string n, int stringsCount) : base(n)
     {
-        StringsCount = sc;
+        StringsCount = stringsCount;
         Console.WriteLine($"Constructor StringInstrument: {Name}, strings: {StringsCount}");
     }
 

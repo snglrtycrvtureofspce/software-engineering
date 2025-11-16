@@ -68,7 +68,5 @@ public class ExchangeApplication
     /// </summary>
     /// <returns>Строка с данными заявки.</returns>
     public override string ToString()
-    {
-        return $"Заявитель: {SurnameInitials}\nИмеющаяся: {OwnedApartment}\nТребуемая: {RequiredApartment}";
-    }
+        => $"Заявитель: {SurnameInitials}\nИмеющаяся: {OwnedApartment}\nТребуемая: {RequiredApartment}";
 }
