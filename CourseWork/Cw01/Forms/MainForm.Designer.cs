@@ -17,6 +17,7 @@
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
@@ -37,9 +38,10 @@
             // 
             // InputButton
             // 
+            this.InputButton.FlatStyle = FlatStyle.Flat;
             this.InputButton.Location = new System.Drawing.Point(12, 12);
             this.InputButton.Name = "InputButton";
-            this.InputButton.Size = new System.Drawing.Size(150, 30);
+            this.InputButton.Size = new System.Drawing.Size(180, 35);
             this.InputButton.TabIndex = 0;
             this.InputButton.Text = "Ввод заявки";
             this.InputButton.UseVisualStyleBackColor = true;
@@ -47,9 +49,10 @@
             // 
             // SearchButton
             // 
-            this.SearchButton.Location = new System.Drawing.Point(168, 12);
+            this.SearchButton.FlatStyle = FlatStyle.Flat;
+            this.SearchButton.Location = new System.Drawing.Point(202, 12);
             this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(150, 30);
+            this.SearchButton.Size = new System.Drawing.Size(180, 35);
             this.SearchButton.TabIndex = 1;
             this.SearchButton.Text = "Поиск варианта";
             this.SearchButton.UseVisualStyleBackColor = true;
@@ -57,9 +60,10 @@
             // 
             // OutputButton
             // 
-            this.OutputButton.Location = new System.Drawing.Point(324, 12);
+            this.OutputButton.FlatStyle = FlatStyle.Flat;
+            this.OutputButton.Location = new System.Drawing.Point(392, 12);
             this.OutputButton.Name = "OutputButton";
-            this.OutputButton.Size = new System.Drawing.Size(150, 30);
+            this.OutputButton.Size = new System.Drawing.Size(180, 35);
             this.OutputButton.TabIndex = 2;
             this.OutputButton.Text = "Вывод картотеки";
             this.OutputButton.UseVisualStyleBackColor = true;
@@ -67,9 +71,10 @@
             // 
             // ExitButton
             // 
-            this.ExitButton.Location = new System.Drawing.Point(480, 12);
+            this.ExitButton.FlatStyle = FlatStyle.Flat;
+            this.ExitButton.Location = new System.Drawing.Point(582, 12);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(150, 30);
+            this.ExitButton.Size = new System.Drawing.Size(180, 35);
             this.ExitButton.TabIndex = 3;
             this.ExitButton.Text = "Выход";
             this.ExitButton.UseVisualStyleBackColor = true;
@@ -78,24 +83,26 @@
             // dataGridView
             // 
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(12, 48);
+            this.dataGridView.Location = new System.Drawing.Point(12, 58);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.RowHeadersWidth = 51;
             this.dataGridView.RowTemplate.Height = 29;
-            this.dataGridView.Size = new System.Drawing.Size(618, 300);
+            this.dataGridView.Size = new System.Drawing.Size(750, 500);
             this.dataGridView.TabIndex = 4;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(642, 360);
+            this.ClientSize = new System.Drawing.Size(774, 570);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.OutputButton);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.InputButton);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Учет заявок на обмен квартир";
             this.ResumeLayout(false);
 

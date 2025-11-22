@@ -5,10 +5,25 @@
 /// </summary>
 public class Apartment
 {
-    public int Rooms { get; set; } // Количество комнат
-    public double Area { get; set; } // Площадь в м²
-    public int Floor { get; set; } // Этаж
-    public string District { get; set; } // Район
+    /// <summary>
+    /// Количество комнат (≥1).
+    /// </summary>
+    public int Rooms { get; set; }
+
+    /// <summary>
+    /// Общая площадь в м² (>0).
+    /// </summary>
+    public double Area { get; set; }
+
+    /// <summary>
+    /// Этаж (≥1).
+    /// </summary>
+    public int Floor { get; set; }
+
+    /// <summary>
+    /// Район города (строка, не пустая).
+    /// </summary>
+    public string District { get; set; }
 
     /// <summary>
     /// Конструктор для инициализации квартиры.
@@ -29,5 +44,5 @@ public class Apartment
     /// Переопределение ToString для вывода характеристик квартиры.
     /// </summary>
     /// <returns>Строка с данными квартиры.</returns>
-    public override string ToString() => $"Комнат: {Rooms}, Площадь: {Area} м², Этаж: {Floor}, Район: {District}";
+    public override string ToString() => $"Комнат: {Rooms}, Площадь: {Area:F2} м², Этаж: {Floor}, Район: {District}";
 }

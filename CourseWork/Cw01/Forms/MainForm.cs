@@ -31,7 +31,7 @@ public partial class MainForm : Form
                 {
                     MessageBox.Show(
                         "Такая заявка уже существует.",
-                        "Ошибка",
+                        "Предупреждение",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Warning);
                 }
@@ -60,12 +60,14 @@ public partial class MainForm : Form
 
                 if (match != null)
                 {
-                    MessageBox.Show(
-                        $"Найден подходящий вариант:\n{match}\nЗаявка удалена из картотеки.",
-                        "Совпадение найдено",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Information);
-                    CardIndex.Remove(match);
+                    if (MessageBox.Show(
+                            $"Найден подходящий вариант:\n{match}\nУдалить из картотеки?",
+                            "Совпадение найдено",
+                            MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        CardIndex.Remove(match);
+                    }
                 }
                 else
                 {
@@ -73,7 +75,7 @@ public partial class MainForm : Form
                     {
                         MessageBox.Show(
                             "Совпадение не найдено. Заявка добавлена в картотеку.",
-                            "Добавлено",
+                            "Информация",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Information);
                     }
@@ -81,7 +83,7 @@ public partial class MainForm : Form
                     {
                         MessageBox.Show(
                             "Такая заявка уже существует.",
-                            "Ошибка",
+                            "Предупреждение",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Warning);
                     }

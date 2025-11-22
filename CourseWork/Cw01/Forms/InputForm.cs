@@ -37,7 +37,7 @@ public partial class InputForm : Form
     {
         try
         {
-            // Валидация
+            // Валидация текстовых полей
             if (string.IsNullOrWhiteSpace(surnameTextBox.Text) ||
                 string.IsNullOrWhiteSpace(ownedDistrictTextBox.Text) ||
                 string.IsNullOrWhiteSpace(requiredDistrictTextBox.Text))
@@ -72,7 +72,7 @@ public partial class InputForm : Form
         }
         catch (Exception ex)
         {
-            MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show(ex.Message, "Ошибка ввода", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 

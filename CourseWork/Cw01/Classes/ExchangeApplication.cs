@@ -5,9 +5,20 @@
 /// </summary>
 public class ExchangeApplication
 {
-    public string SurnameInitials { get; set; } // Фамилия и инициалы
-    public Apartment OwnedApartment { get; set; } // Имеющаяся квартира
-    public Apartment RequiredApartment { get; set; } // Требуемая квартира
+    /// <summary>
+    /// Фамилия и инициалы заявителя.
+    /// </summary>
+    public string SurnameInitials { get; set; }
+
+    /// <summary>
+    /// Имеющаяся квартира.
+    /// </summary>
+    public Apartment OwnedApartment { get; set; }
+
+    /// <summary>
+    /// Требуемая квартира.
+    /// </summary>
+    public Apartment RequiredApartment { get; set; }
 
     /// <summary>
     /// Конструктор для инициализации заявки.
@@ -27,7 +38,7 @@ public class ExchangeApplication
     /// </summary>
     /// <param name="obj">Объект для сравнения.</param>
     /// <returns>True, если заявки равны.</returns>
-    public override bool Equals(object obj)
+    public override bool Equals(object? obj)
     {
         if (obj is ExchangeApplication other)
             return SurnameInitials == other.SurnameInitials &&
