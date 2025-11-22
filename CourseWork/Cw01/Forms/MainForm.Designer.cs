@@ -1,4 +1,4 @@
-﻿namespace Cw01
+﻿namespace Cw01.Forms
 {
     partial class MainForm
     {

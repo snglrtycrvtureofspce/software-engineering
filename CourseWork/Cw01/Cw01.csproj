@@ -9,10 +9,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Update="MainForm.cs">
+      <Compile Update="Forms\InputForm.cs">
         <SubType>Form</SubType>
       </Compile>
-      <Compile Update="InputForm.cs">
+      <Compile Update="Forms\MainForm.cs">
         <SubType>Form</SubType>
       </Compile>
     </ItemGroup>

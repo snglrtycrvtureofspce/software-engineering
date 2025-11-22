@@ -1,4 +1,4 @@
-﻿namespace Cw01
+﻿namespace Cw01.Forms
 {
     partial class InputForm
     {
@@ -238,7 +238,7 @@
             this.OKButton.Name = "OKButton";
             this.OKButton.Size = new System.Drawing.Size(75, 30);
             this.OKButton.TabIndex = 4;
-            this.OKButton.Text = "OK";
+            this.OKButton.Text = "ОК";
             this.OKButton.UseVisualStyleBackColor = true;
             this.OKButton.Click += new System.EventHandler(this.OKButton_Click);
             // 
@@ -248,7 +248,7 @@
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(75, 30);
             this.CancelButton.TabIndex = 5;
-            this.CancelButton.Text = "Cancel";
+            this.CancelButton.Text = "Отмена";
             this.CancelButton.UseVisualStyleBackColor = true;
             this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 

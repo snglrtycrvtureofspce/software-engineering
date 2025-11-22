@@ -1,4 +1,4 @@
-﻿namespace Cw01;
+﻿namespace Cw01.Classes;
 
 /// <summary>
 /// Класс, представляющий заявку на обмен: фамилия, имеющаяся и требуемая квартиры.
@@ -30,7 +30,6 @@ public class ExchangeApplication
     public override bool Equals(object obj)
     {
         if (obj is ExchangeApplication other)
-        {
             return SurnameInitials == other.SurnameInitials &&
                    OwnedApartment.Rooms == other.OwnedApartment.Rooms &&
                    OwnedApartment.Area == other.OwnedApartment.Area &&
@@ -40,7 +39,7 @@ public class ExchangeApplication
                    RequiredApartment.Area == other.RequiredApartment.Area &&
                    RequiredApartment.Floor == other.RequiredApartment.Floor &&
                    RequiredApartment.District == other.RequiredApartment.District;
-        }
+
         return false;
     }
 

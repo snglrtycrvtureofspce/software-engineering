@@ -1,4 +1,6 @@
-﻿namespace Cw01;
+﻿using Cw01.Classes;
+
+namespace Cw01.Forms;
 
 public partial class InputForm : Form
 {
